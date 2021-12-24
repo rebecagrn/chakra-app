@@ -23,7 +23,7 @@ function Details() {
         <GridItem colSpan={1}>
           <FormControl>
             <FormLabel>First Name</FormLabel>
-            <input placeholder="Rebeca" />
+            <Input placeholder="Rebeca" />
           </FormControl>
         </GridItem>
         <GridItem colSpan={1}>
@@ -59,7 +59,7 @@ function Details() {
         </GridItem>
         <GridItem colSpan={2}>
           <Button size="lg" w="full">
-            Add to cart
+            Place order
           </Button>
         </GridItem>
       </SimpleGrid>
