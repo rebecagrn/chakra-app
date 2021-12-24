@@ -10,9 +10,12 @@ import {
   Select,
   Checkbox,
   Button,
+  useColorMode,
 } from '@chakra-ui/react';
 
 function Details() {
+  const { toggleColorMode } = useColorMode();
+
   return (
     <VStack w="full" h="full" p={10} spacing={10} alignItems="flex-start">
       <VStack spacing={3} alignItems="flex-start">
