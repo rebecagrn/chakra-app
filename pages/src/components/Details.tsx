@@ -10,11 +10,11 @@ import {
   Select,
   Checkbox,
   Button,
-  useColorMode,
+  useBreakpointValue,
 } from '@chakra-ui/react';
 
 function Details() {
-  const { toggleColorMode } = useColorMode();
+  const colSpan = useBreakpointValue({ base: 1, md: 1 });
 
   return (
     <VStack w="full" h="full" p={10} spacing={10} alignItems="flex-start">
@@ -23,13 +23,13 @@ function Details() {
         <Text>If you already have an account, click here</Text>
       </VStack>
       <SimpleGrid columns={2} columnGap={3} rowGap={6}>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>First Name</FormLabel>
             <Input placeholder="Rebeca" />
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Last Name</FormLabel>
             <Input placeholder="." />
@@ -41,13 +41,13 @@ function Details() {
             <Input placeholder="Street 404" />
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>City</FormLabel>
             <Input placeholder="Nowhere" />
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={colSpan}>
           <FormControl>
             <FormLabel>Country</FormLabel>
             <Select>

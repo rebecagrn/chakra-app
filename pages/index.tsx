@@ -9,7 +9,11 @@ const Home: NextPage = () => {
     <>
       <Container maxW="container.xl" p={0}>
         <Header />
-        <Flex h="100vh" py={20}>
+        <Flex
+          h={{ base: 'auto', md: '90vh' }}
+          py={[0, 10, 20]}
+          direction={{ base: 'column-reverse', md: 'row' }}
+        >
           <Details />
           <Cart />
         </Flex>
